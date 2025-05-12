@@ -10,7 +10,7 @@ body {
 
 /* Navbar Styles */
 .navbar {
-    background-color: #1a1a1a;
+    background-color: #800000;
     padding: 1rem 5%;
     display: flex;
     justify-content: space-between;
@@ -40,13 +40,13 @@ body {
 }
 
 .nav-links a:hover {
-    color: #ffd700;
+    color: #ff4d4d;
 }
 
 /* Hero Section Styles */
 .hero {
     height: 850px;
-    background-color: #2a2a2a;
+    background-color: #1a0000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,13 +72,14 @@ body {
 .cta-button {
     padding: 1rem 2rem;
     font-size: 1.1rem;
-    background-color: #ffd700;
+    background-color: #cc0000;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    color: #ffffff;
 }
 
 .cta-button:hover {
-    background-color: #ffed4a;
+    background-color: #ff0000;
 }
