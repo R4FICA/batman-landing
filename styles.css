@@ -138,6 +138,17 @@ body {
     color: #cccccc;
 }
 
+
+/* Ajustamos la perspectiva para la sección invertida */
+.content-section-reverse .image-container {
+    perspective-origin: right center;
+}
+
+.content-section-reverse .image-container:hover .hover-3d-image {
+    transform: rotateY(-10deg) rotateX(5deg);
+    box-shadow: -20px 20px 30px rgba(0, 0, 0, 0.4);
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .content-container {
