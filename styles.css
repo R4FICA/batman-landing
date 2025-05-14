@@ -107,16 +107,15 @@ body {
 .hover-3d-image {
     width: 100%;
     max-height: 600px;
-    object-fit: cover;
-    border-radius: 10px;
-    transition: transform 0.5s ease;
+    object-fit: cover;    border-radius: 10px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
     transform-style: preserve-3d;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .image-container:hover .hover-3d-image {
     transform: rotateY(10deg) rotateX(5deg);
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.4);
+    box-shadow: -20px 20px 30px rgba(0, 0, 0, 0.4);
 }
 
 .text-content {
@@ -146,7 +145,7 @@ body {
 
 .content-section-reverse .image-container:hover .hover-3d-image {
     transform: rotateY(-10deg) rotateX(5deg);
-    box-shadow: -20px 20px 30px rgba(0, 0, 0, 0.4);
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.4);
 }
 
 /* Responsive adjustments */
