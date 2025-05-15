@@ -19,6 +19,7 @@ body {
     width: 100%;
     top: 0;
     z-index: 1000;
+    height: 80px;
 }
 
 .nav-logo {
@@ -87,7 +88,7 @@ body {
 /* Content Section Styles */
 .content-section {
     background-color: #2a0505;
-    padding: 4rem 5%;
+    padding: 100px ;
     min-height: 600px;
 }
 
@@ -146,6 +147,48 @@ body {
 .content-section-reverse .image-container:hover .hover-3d-image {
     transform: rotateY(-10deg) rotateX(5deg);
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #1a0000;
+    padding: 3rem 5%;
+    color: #ffffff;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer-logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #cc0000;
+}
+
+.footer-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #cc0000;
+}
+
+.footer-copyright {
+    color: #cccccc;
+    font-size: 0.9rem;
 }
 
 /* Responsive adjustments */
