@@ -97,7 +97,7 @@ body {
 /* Content Section Styles */
 .content-section {
     background-color: #2a0505;
-    padding: 100px 5%;
+    padding: 100px;
     min-height: 600px;
     display: flex;
     justify-content: center;
@@ -111,7 +111,6 @@ body {
 }
 
 .image-container {
-    flex: 1;
     perspective: 1000px;
 }
 
@@ -132,7 +131,6 @@ body {
 .text-content {
     flex: 1;
     color: #ffffff;
-    padding: 2rem;
 }
 
 .text-content h2 {
@@ -145,7 +143,7 @@ body {
 }
 
 .text-content p {
-    font-size: 1.2rem;
+    font-size: 26px;
     line-height: 1.6;
     margin-bottom: 1.5rem;
     color: #cccccc;
@@ -229,16 +227,32 @@ body {
 }
 
 /* Media Queries */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+    
     .content-section {
         padding: 60px 5%;
-    }
-
+    }    
+    
     .content-container {
+        flex-direction: column;
         width: min(1440px, 90%);
     }
 
-    /* Navbar siempre con estilo glossy en móvil */
+    .content-section-reverse .content-container {
+        flex-direction: column;
+    }
+
+    .image-container {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        order: -1;
+    }
+
+    .text-content {
+        text-align: center;
+    }
+
     .navbar {
         background: linear-gradient(135deg, rgba(46, 0, 0, 0.4), rgba(207, 66, 0, 0.2));
         backdrop-filter: blur(10px);
@@ -247,27 +261,9 @@ body {
         margin: 1rem auto;
         height: auto;
         min-height: 60px;
-        box-shadow: 
-            0 10px 30px rgba(0, 0, 0, 0.3),
-            inset 0 1px 2px rgba(255, 255, 255, 0.3);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), inset 0 1px 2px rgba(255, 255, 255, 0.3);
         flex-wrap: wrap;
         padding: 0.8rem min(5%, 2rem);
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-    .hamburger.active .hamburger-line:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .hamburger-line:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .hamburger-line:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
     }
 
     .nav-links {
@@ -297,6 +293,22 @@ body {
         text-align: center;
         border-radius: 8px;
         transition: background-color 0.3s ease;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .hamburger-line:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .hamburger-line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .hamburger-line:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
     }
 
 }
