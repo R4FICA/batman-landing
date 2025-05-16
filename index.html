@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+
+<head>    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Batman Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
-<body>    <nav class="navbar">
+
+<body>
+    <nav class="navbar">
         <div class="nav-logo">Batman</div>
         <button class="hamburger">
             <span class="hamburger-line"></span>
@@ -21,15 +27,20 @@
         </ul>
     </nav>
     <section class="hero">
-        
+
     </section>
     <section class="content-section">
-        <div class="content-container">            <div class="image-container">
+        <div class="content-container">
+            <div class="image-container">
                 <img src="img/batman-1.jpg" alt="Batman in action" class="hover-3d-image">
             </div>
-            <div class="text-content">                <h2>The Dark Knight</h2>
-                <p>Bruce Wayne, también conocido como Batman, es el protector de Gotham City. Un vigilante que lucha contra el crimen y la corrupción, utilizando su intelecto, habilidades de detective y recursos tecnológicos para mantener la ciudad a salvo.</p>
-                <p>Con años de entrenamiento y dedicación, Batman se ha convertido en una leyenda urbana que infunde temor en los criminales y esperanza en los ciudadanos de Gotham.</p>
+            <div class="text-content">
+                <h2>The Dark Knight</h2>
+                <p>Bruce Wayne, también conocido como Batman, es el protector de Gotham City. Un vigilante que lucha
+                    contra el crimen y la corrupción, utilizando su intelecto, habilidades de detective y recursos
+                    tecnológicos para mantener la ciudad a salvo.</p>
+                <p>Con años de entrenamiento y dedicación, Batman se ha convertido en una leyenda urbana que infunde
+                    temor en los criminales y esperanza en los ciudadanos de Gotham.</p>
             </div>
         </div>
     </section>
@@ -37,9 +48,13 @@
         <div class="content-container">
             <div class="text-content">
                 <h2>La Tecnología de Batman</h2>
-                <p>El Batcave es el centro de operaciones de Batman, equipado con la tecnología más avanzada y vehículos especializados. Desde el icónico Batmobile hasta el sofisticado sistema informático, cada herramienta está diseñada para ayudar en su misión.</p>
-                <p>La combinación de recursos de Wayne Enterprises y años de desarrollo ha creado un arsenal tecnológico sin igual en la lucha contra el crimen en Gotham.</p>
-            </div>            <div class="image-container">
+                <p>El Batcave es el centro de operaciones de Batman, equipado con la tecnología más avanzada y vehículos
+                    especializados. Desde el icónico Batmobile hasta el sofisticado sistema informático, cada
+                    herramienta está diseñada para ayudar en su misión.</p>
+                <p>La combinación de recursos de Wayne Enterprises y años de desarrollo ha creado un arsenal tecnológico
+                    sin igual en la lucha contra el crimen en Gotham.</p>
+            </div>
+            <div class="image-container">
                 <img src="img/batman-2.png" alt="Batcave technology" class="hover-3d-image">
             </div>
         </div>
@@ -56,43 +71,7 @@
                 <p>&copy; 2025 Wayne Enterprises. All rights reserved.</p>
             </div>
         </div>
-    </footer>    <script>
-        const navbar = document.querySelector('.navbar');
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
-          // Scroll handler
-        window.addEventListener('scroll', () => {
-            if (window.innerWidth > 768) { // Solo aplicar en desktop
-                if (window.scrollY > 50) {
-                    navbar.classList.add('navbar-scrolled');
-                } else {
-                    navbar.classList.remove('navbar-scrolled');
-                }
-            }
-        });
-
-        // Verificar también al redimensionar la ventana
-        window.addEventListener('resize', () => {
-            if (window.innerWidth <= 768) {
-                navbar.classList.remove('navbar-scrolled');
-            } else if (window.scrollY > 50) {
-                navbar.classList.add('navbar-scrolled');
-            }
-        });
-
-        // Hamburger menu handler
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navLinks.classList.toggle('active');
-        });
-
-        // Close menu when clicking a link
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                hamburger.classList.remove('active');
-                navLinks.classList.remove('active');
-            });
-        });
-    </script>
+    </footer>
 </body>
+
 </html>
