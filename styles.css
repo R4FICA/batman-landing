@@ -89,14 +89,59 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
-    align-items: flex-end;
     justify-content: center;
     padding: 0 5%;
     position: relative;
+    overflow: hidden;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    position: relative;
+    align-items: flex-end;
+}
+
+.item {
+    position: relative;
+}
+
+.item:first-child {
+    margin-right: -100px;
+}
+
+.item:last-child {
+    margin-left: -100px;
+}
+
+.main-batman {
+    height: 888px;
+    z-index: 3;
+    position: relative;
+}
+
+.main-the-riddler {
+    z-index: 1;
+    position: relative;
+}
+
+.main-fat {
+    z-index: 1;
+    position: relative;
+}
+
+.item {
+    transition: filter 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.list:hover .item:not(:hover) {
+    filter: grayscale(1) blur(4px)
 }
 
 .hero-image {
     width: auto;
+    display: block;
     margin-bottom: 0;
 }
 
