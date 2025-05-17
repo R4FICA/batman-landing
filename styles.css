@@ -101,6 +101,7 @@ body {
     margin-bottom: 0;
     position: relative;
     align-items: flex-end;
+    top: 20px;
 }
 
 .item {
@@ -131,18 +132,20 @@ body {
     position: relative;
 }
 
-.item {
-    transition: filter 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.list:hover .item:not(:hover) {
-    filter: grayscale(1) blur(4px)
-}
-
 .hero-image {
     width: auto;
     display: block;
     margin-bottom: 0;
+    transition: filter 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: auto;
+}
+
+.list:hover .hero-image {
+    filter: grayscale(1) blur(4px);
+}
+
+.list .hero-image:hover {
+    filter: none;
 }
 
 /* Content Section Styles */
