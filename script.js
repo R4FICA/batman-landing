@@ -34,3 +34,20 @@ const navbar = document.querySelector('.navbar');
                 navLinks.classList.remove('active');
             });
         });
+
+        // Mouse parallax effect for the text
+        const parallaxText = document.querySelector('.parallax-text');
+        const hero = document.querySelector('.hero');
+
+        hero.addEventListener('mousemove', (e) => {
+            const mouseX = e.clientX / window.innerWidth - 0.5;
+            const mouseY = e.clientY / window.innerHeight - 0.5;
+            
+            parallaxText.style.transform = `
+                translate(calc(-50% + ${mouseX * 50}px), calc(-50% + ${mouseY * 50}px))
+            `;
+        });
+
+        hero.addEventListener('mouseleave', () => {
+            parallaxText.style.transform = 'translate(-50%, -50%)';
+        });
