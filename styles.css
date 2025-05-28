@@ -107,12 +107,23 @@ body {
     position: static;
 }
 
-.item:first-child {
+.item a {
+    display: block;
+    text-decoration: none;
+}
+
+.item:first-child a {
     margin-right: -100px;
 }
 
-.item:last-child {
+.item:last-child a {
     margin-left: -100px;
+}
+
+/* Mover los márgenes de .item a los enlaces */
+.item:first-child,
+.item:last-child {
+    margin: 0;
 }
 
 .hero-image {
