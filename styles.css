@@ -131,11 +131,11 @@ body {
 }
 
 .item:first-child a {
-    margin-right: -100px;
+    margin-right: -350px;
 }
 
 .item:last-child a {
-    margin-left: -100px;
+    margin-left: -50px;
 }
 
 /* Mover los márgenes de .item a los enlaces */
@@ -161,17 +161,17 @@ body {
 }
 
 .main-the-penguin {
-  position: absolute;
-  bottom: 0;
-  left: 0%;
+  position: relative; /* cambia de absolute a relative */
   z-index: 1;
+  display: block;
+  margin: 0 auto; 
   height: 600px; /* Altura reducida */
   width: auto;
   bottom: -10px;
 }
 
 .main-the-riddler {
-  position: absolute;
+  position: relative;
   bottom: 0;
   z-index: 1;
   height: 600px; /* Altura reducida */
