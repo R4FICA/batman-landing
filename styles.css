@@ -9,7 +9,7 @@ body {
     font-weight: 400;
 }
 
-/* Navbar Styles */
+
 .navbar {
     background-color: transparent;
     padding: 2rem 5%;
@@ -32,7 +32,7 @@ body {
     backdrop-filter: blur(8px);
     margin: 1rem auto;
     border-radius: 20px;
-    width: min(1440px, 90%); /* Reducido de 95% a 90% para más espacio en los bordes */
+    width: min(1440px, 90%);
     padding: 1rem min(5%, 2rem);
     height: 60px;
     box-shadow: 
@@ -81,7 +81,7 @@ body {
     opacity: 0.4;
 }
 
-/* Hero Section Styles */
+
 .hero {
   height: 910px;
     background-image: url('img/gotham-sunshine.webp');
@@ -138,7 +138,7 @@ body {
     margin-left: -50px;
 }
 
-/* Mover los márgenes de .item a los enlaces */
+
 .item:first-child,
 .item:last-child {
     margin: 0;
@@ -161,11 +161,11 @@ body {
 }
 
 .main-the-penguin {
-  position: relative; /* cambia de absolute a relative */
+  position: relative;
   z-index: 1;
   display: block;
   margin: 0 auto; 
-  height: 600px; /* Altura reducida */
+  height: 600px;
   width: auto;
   bottom: -10px;
 }
@@ -174,7 +174,7 @@ body {
   position: relative;
   bottom: 0;
   z-index: 1;
-  height: 600px; /* Altura reducida */
+  height: 600px;
   width: auto;
   bottom: -10px;
 }
@@ -187,7 +187,7 @@ body {
     filter: none;
 }
 
-/* Content Section Styles */
+
 .content-section {
     background-color: #2a0505;
     padding: clamp(40px, 8vw, 100px);
@@ -248,7 +248,7 @@ body {
     letter-spacing: 0.5px;
 }
 
-/* Ajustamos la perspectiva para la sección invertida */
+
 .content-section-reverse .image-container {
     perspective-origin: right center;
 }
@@ -258,7 +258,7 @@ body {
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.4);
 }
 
-/* Footer Styles */
+
 .footer {
     background-color: #1a0000;
     padding: 3rem 5%;
@@ -300,7 +300,7 @@ body {
     font-size: 0.9rem;
 }
 
-/* Hamburger Menu Styles */
+
 .hamburger {
     display: none;
     background: none;
@@ -322,7 +322,7 @@ body {
     transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Media Queries */
+
 @media (max-width: 1200px) {
     .content-section {
         padding: 40px 5%;
