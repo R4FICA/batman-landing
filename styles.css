@@ -35,7 +35,7 @@ body {
     width: min(1440px, 90%);
     padding: 1rem min(5%, 2rem);
     height: 60px;
-    box-shadow: 
+    box-shadow:
         0 10px 30px rgba(0, 0, 0, 0.3),
         inset 0 1px 2px rgba(255, 255, 255, 0.3);
 }
@@ -83,7 +83,7 @@ body {
 
 
 .hero {
-  height: 910px;
+    height: 910px;
     background-image: url('img/gotham-sunshine.webp');
     background-size: cover;
     background-position: center;
@@ -113,12 +113,12 @@ body {
 }
 
 .list {
-  position: relative;
-  width: 1440px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  z-index: 2;
+    position: relative;
+    width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 2;
 }
 
 .item {
@@ -135,7 +135,7 @@ body {
 }
 
 .item:last-child a {
-    margin-left: -50px;
+    margin-left: -70px;
 }
 
 
@@ -153,30 +153,30 @@ body {
 }
 
 .main-batman {
-  position: relative;
-  z-index: 3;
-  display: block;
-  margin: 0 auto;
-  bottom: -10px;
+    position: relative;
+    z-index: 3;
+    display: block;
+    margin: 0 auto;
+    bottom: -10px;
 }
 
 .main-the-penguin {
-  position: relative;
-  z-index: 1;
-  display: block;
-  margin: 0 auto; 
-  height: 600px;
-  width: auto;
-  bottom: -10px;
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin: 0 auto;
+    height: 600px;
+    width: auto;
+    bottom: -10px;
 }
 
 .main-the-riddler {
-  position: relative;
-  bottom: 0;
-  z-index: 1;
-  height: 600px;
-  width: auto;
-  bottom: -10px;
+    position: relative;
+    bottom: 0;
+    z-index: 1;
+    height: 600px;
+    width: auto;
+    bottom: -10px;
 }
 
 .list:hover .hero-image {
@@ -326,8 +326,8 @@ body {
 @media (max-width: 1200px) {
     .content-section {
         padding: 40px 5%;
-    }    
-    
+    }
+
     .content-container {
         flex-direction: column;
         width: min(1440px, 90%);
@@ -367,7 +367,9 @@ body {
         gap: 0;
         overflow: hidden;
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    }    .nav-links.active {
+    }
+
+    .nav-links.active {
         max-height: 300px;
         opacity: 1;
         visibility: visible;
