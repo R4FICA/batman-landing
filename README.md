@@ -1,6 +1,6 @@
 # 🦇 Landing Page Batman
 
-![Miniatura del proyecto](ruta/a/tu/miniatura.png)
+![Miniatura del proyecto](/img/Batman-mini.webp)
 
 ---
 
